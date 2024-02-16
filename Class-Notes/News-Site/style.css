@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: lightgrey;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-links {
+
+    text-decoration: none;
+    list-style: none;
+}
