@@ -46,9 +46,12 @@ header, footer {
 
 @font-face {
   font-family: 'DM Sans';
-  src: url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+  src: url('https://fonts.googleapis.com'),
+  url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+  font-weight: normal;
+  font-style: normal;
 }
 
-nav a {
-  text-decoration: none;
+html {
+  font-family: "DM Sans";
 }
