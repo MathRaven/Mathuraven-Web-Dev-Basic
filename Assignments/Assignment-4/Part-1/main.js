@@ -21,11 +21,13 @@ function result() {
     const yItem = randomValueFromArray(insertY) 
     const zItem = randomValueFromArray(insertZ)
     
-    newStory = 
+    newStory = newStory.replaceAll(":insertx:", xItem);
+    newStory = newStory.replaceAll(":inserty:", yItem);
+    newStory = newStory.replaceAll(":insertz:", zItem);
 
   if(customName.value !== '') {
     const name = customName.value;
-
+    newStory = newStory.replaceAll('Bob', name);
   }
 
   if(document.getElementById("uk").checked) {
@@ -34,6 +36,6 @@ function result() {
 
   }
 
-  story.textContent = ;
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }
