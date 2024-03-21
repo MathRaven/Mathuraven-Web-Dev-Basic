@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <style>
+        .blog-container {
+            margin: 0 auto;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <title>Blog</title>
+</head>
+<body>
+    <h1>Blog</h1>
+    <div class = "blog-container">
+        <input type="text" id="titleInput" placeholder="Title">
+        <textarea id="contentInput" placeholder="Content" autocomplete="off"></textarea>
+        <button id="addPostBtn">Add Post</button>
+        <div id="blog-posts"></div>
+    </div>
+</body>
+</html>
