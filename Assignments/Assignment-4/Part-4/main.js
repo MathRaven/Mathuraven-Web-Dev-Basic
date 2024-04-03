@@ -18,12 +18,18 @@ function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
-class Ball {
-  constructor(x, y, velX, velY, color, size) {
+class Shape {
+  constructor(x, y, velX, velY) {
     this.x = x;
     this.y = y;
     this.velX = velX;
     this.velY = velY;
+  }
+}
+
+class Ball {
+  constructor(x, y, velX, velY, color, size) {
+    super(x, y, velX, velY)    
     this.color = color;
     this.size = size;
   }
@@ -102,18 +108,5 @@ function loop() {
 
   requestAnimationFrame(loop);
 }
-
-const testBall = new Ball(50, 100, 4, 4, "blue", 10);
-const testBall1 = new Ball(50, 100, 4, 4, "blue", 10);
-const testBall2 = new Ball(50, 100, 4, 4, "blue", 10);
-const testBall3 = new Ball(50, 100, 4, 4, "blue", 10);
-const testBall4 = new Ball(50, 100, 4, 4, "blue", 10);
-const testBall5 = new Ball(50, 100, 4, 4, "blue", 10);
-const testBall6 = new Ball(50, 100, 4, 4, "blue", 10);
-const testBall7 = new Ball(50, 100, 4, 4, "blue", 10);
-const testBall8 = new Ball(50, 100, 4, 4, "blue", 10);
-const testBall9 = new Ball(50, 100, 4, 4, "blue", 10);
-const testBall10 = new Ball(50, 100, 4, 4, "blue", 10);
-
 
 loop();
