@@ -86,7 +86,6 @@ class EvilCircle extends Shape{
   
         if (distance < this.size + ball.size) {
           ball.exists = false;
-          
         }
       }
     }
@@ -174,6 +173,10 @@ function loop() {
     ball.update();
     ball.collisionDetect();
   }
+
+  evilBall.draw();
+  evilBall.checkBounds();
+  evilBall.collisionDetect();
 
   requestAnimationFrame(loop);
 }
