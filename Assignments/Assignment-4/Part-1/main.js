@@ -15,7 +15,7 @@ const insertZ = ["spontaneously combusted", "melted into a puddle on the sidewal
 randomize.addEventListener('click', result);
 
 function result() {
-    const newStory = storyText;
+    let newStory = storyText;
 
     const xItem = randomValueFromArray(insertX)
     const yItem = randomValueFromArray(insertY) 
@@ -31,12 +31,10 @@ function result() {
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300*0.0714286);
+    const weight = `${Math.round(300*0.0714286)} stone`;
     const temperature =  `${Math.round((94-32) * 5 / 9)} centigrade`;
     newStory = newStory.replaceAll('94 fahrenheit', temperature);
     newStory = newStory.replaceAll('300 pounds', weight);
-
-
   }
 
   story.textContent = newStory;
